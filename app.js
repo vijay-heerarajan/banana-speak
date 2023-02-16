@@ -3,7 +3,16 @@
 // alert("This script works: " + username);
 
 var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+console.log(txtInput);
 
-btnTranslate.addEventListener("click", function clickEventHandler(){
-    console.log("clicked!");
-});
+function clickHandler() {
+        console.log("clicked!");
+        console.log("click", txtInput.value);
+      }
+
+btnTranslate.addEventListener("click", clickHandler);
+
+
+
+
